@@ -1,6 +1,7 @@
 import random
-# rand_list =
 
-# list_comprehension_below_10 =
+random_numbers = [random.randint(1,20) for i in range(1,11)]
 
-# list_comprehension_below_10 =
+filtered_numbers_less_than_10_a = [rn for rn in random_numbers if rn < 10]
+
+filtered_numbers_less_than_10_b = list(filter(lambda x: x < 10, random_numbers))
